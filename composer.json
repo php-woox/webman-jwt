@@ -1,0 +1,26 @@
+{
+  "name": "php-woox/webman-jwt",
+  "description": "JSON Web Token (JWT) for webman plugin",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=8.2",
+    "workerman/webman-framework": "^1.5",
+    "firebase/php-jwt": "^6.10",
+    "ext-json": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Woox\\WebmanJwt\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Woox\\Webman\\Jwt\\Tests\\": "tests"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^11.0",
+    "workerman/webman": "^1.5"
+  }
+}
